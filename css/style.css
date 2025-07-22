@@ -1,0 +1,126 @@
+/*********************** CSS for Main Header and Navigation **********************
+HEADER
+*/
+
+.main-header {
+  background-color: #fff;
+  padding: 2rem 4rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.link-home {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  gap: 1rem;
+  color: #3cb371;
+}
+
+.logo-icon {
+  font-size: 3rem;
+  color: #3cb371;
+}
+
+.main-nav-links-box {
+  display: flex;
+  gap: 10rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #3cb371;
+}
+
+/* Link Vote */
+.link-vote {
+  background-color: rgba(60, 179, 114, 0.1);
+}
+
+/* Link Register */
+.link-register {
+  background-color: #3cb371;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Link Login */
+.link-register:hover {
+  color: #fff;
+  background-color: #63c28d;
+}
+
+.link-login {
+  font-weight: 600;
+}
+.link-login:hover {
+  background-color: #ffd700;
+  color: #000;
+}
+
+/* Link Admin */
+.link-admin {
+  font-weight: 600;
+  background-color: #e5f5e9;
+  border: solid 1px rgba(60, 179, 114, 0.3);
+}
+
+.link-admin:hover {
+  background-color: #ffd700;
+  color: #000;
+}
+
+/* *********************** CSS for Hero Section **********************
+HERO SECTION */
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #d2efde;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(60, 179, 114, 0.5);
+}
+
+.hero-icon {
+  font-size: 5rem;
+  color: #3cb371;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #3cb371;
+}
+
+/* CSS for Candidates Section */
+.candidate {
+  background-color: #e5f5e9;
+}
