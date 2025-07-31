@@ -62,11 +62,26 @@ body {
   font-size: 1.6rem; /* 16px */
   line-height: 1.2;
   background-color: #e5f5e9; /* Light background */
+  height: 100vh;
 }
 
 /* REUSABLE COMPONENTS */
+
+.link:link {
+  text-decoration: none;
+}
+
 .color-text {
   color: #444;
+}
+
+.color-dark {
+  color: #222; /* Dark text */
+}
+
+.secondary-heading {
+  font-size: 2.4rem; /* 24px */
+  font-weight: 600; /* Semi-Bold */
 }
 
 .primary-color {
@@ -79,8 +94,43 @@ body {
   color: #e5f5e9; /* Tertiary color */
 }
 
+.input {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 1.5rem;
+  font-size: 1.6rem; /* 16px */
+
+  background-color: #e5f5e9;
+}
+
+/* BUTTON STYLES */
+
+.btn-primary {
+  cursor: pointer;
+  background-color: #3cb371;
+  color: #fff;
+  padding: 1.5rem 3rem;
+  border: none;
+  border-radius: 1.5rem;
+  font-weight: 500;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10rem; /* 100px */
+}
 .margin-bottom-5 {
-  margin-bottom: 5rem; /* 20px */
+  margin-bottom: 5rem; /* 50px */
+}
+
+.margin-bottom-3 {
+  margin-bottom: 3rem; /* 30px */
+}
+.margin-bottom-2 {
+  margin-bottom: 2rem; /* 20px */
+}
+.margin-bottom-1 {
+  margin-bottom: 1rem; /* 10px */
 }
 
 .grid {
@@ -88,4 +138,40 @@ body {
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, 1fr);
+}
+
+/* COMPONENTS WITH THE SAME PROPERTIES */
+.btn-sign-in,
+.btn-register {
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+.btn-sign-in:hover,
+.btn-register:hover {
+  background-color: #63c28d;
+  color: #fff;
+}
+
+/* FOOTER */
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 2rem 4rem;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.4rem;
+}
+
+/* HELPER CLASSES */
+.label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 3rem;
 }
