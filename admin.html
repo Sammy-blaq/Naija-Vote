@@ -12,6 +12,11 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- Google Fonts (Inter)-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -74,16 +79,84 @@
       </nav>
     </header>
     <main>
-      <div class="container">
+      <div class="admin-container">
         <section>
-          <header>
+          <header class="admin-header margin-bottom-5">
             <h1>Admin Dashboard</h1>
             <p>Monitor and manage the voting process.</p>
           </header>
-          <div class="admin-actions">
-            <button class="btn">Overview</button>
-            <button class="btn">AI Audit</button>
-            <button class="btn">Feedback</button>
+          <!-- Admin Actions Buttons -->
+          <div class="admin-actions margin-bottom-3">
+            <button class="btn btn-admin-action active btn-overview">
+              Overview
+            </button>
+            <button class="btn btn-admin-action btn-ai-audit">AI Audit</button>
+            <button class="btn btn-admin-action btn-feedback">Feedback</button>
+          </div>
+        </section>
+        <section class="admin-content">
+          <div class="admin-overview">
+            <div class="overview-content flex-column">
+              <div class="overview-content-header flex-row">
+                <p class="color-dark">Total Votes</p>
+                <ion-icon name="analytics" class="overview-icon"></ion-icon>
+              </div>
+              <p class="overview-content-count color-dark">1,234</p>
+              <p>Total number of vote casts</p>
+            </div>
+
+            <div class="overview-content flex-column">
+              <div class="overview-content-header flex-row">
+                <p class="color-dark">Candidates</p>
+                <p><ion-icon name="people" class="overview-icon"></ion-icon></p>
+              </div>
+              <p class="overview-content-count color-dark">4</p>
+              <p>Number of candidates in the election.</p>
+            </div>
+
+            <div class="overview-content flex-column">
+              <div class="overview-content-header flex-row">
+                <p class="color-dark">Feedback Reports</p>
+                <p>
+                  <ion-icon name="chatbubbles" class="overview-icon"></ion-icon>
+                </p>
+              </div>
+              <p class="overview-content-count color-dark">0</p>
+              <p>Total user feedback submissions.</p>
+            </div>
+          </div>
+
+          <div class="admin-ai-audit">
+            <div class="audit-header flex-row">
+              <p class="audit-icon-p">
+                <i class="fa fa-shield audit-icon" aria-hidden="true"></i>
+              </p>
+              <div>
+                <h2 class="color-dark">Voting Pattern Audit</h2>
+                <p>
+                  Use our GenAI-powered tool to analyze the voting data for any
+                  unusual patterns that might indicate fraudulent activity.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <p>
+                Start a new analysis of the current voting data. This may take a
+                few moments.
+              </p>
+              <button type="button" class="btn btn-run-audit">
+                Run AI Audit
+              </button>
+            </div>
+            <!-- Add AI audit content here -->
+            <h3>Audit Results</h3>
+          </div>
+
+          <div class="admin-feedback">
+            <h2>Feedback</h2>
+            <p>View and manage user feedback.</p>
+            <!-- Add feedback content here -->
           </div>
         </section>
       </div>
@@ -93,5 +166,6 @@
       <p>&copy; 2023 Naija Votes. All rights reserved.</p>
       <p><a href="#" class="link report-link">Report an Issue / Feedback</a></p>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
