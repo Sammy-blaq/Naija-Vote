@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Google Fonts (Inter)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/queries.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Naija Votes &mdash; Your Voice, Your Vote</title>
+  </head>
+  <body class="color-text">
+    <header class="main-header margin-bottom-5">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link primary-color link-home" href="./index.html"
+              ><ion-icon name="laptop-outline" class="logo-icon"></ion-icon
+              >Naija Votes</a
+            >
+          </li>
+        </ul>
+
+        <div class="main-nav-links-box">
+          <ul class="main-nav-list">
+            <li>
+              <a class="main-nav-link link-vote primary-color" href="#">Vote</a>
+            </li>
+            <li><a class="main-nav-link color-text" href="#">Results</a></li>
+            <li>
+              <a class="main-nav-link color-text" href="./how-to-vote.html"
+                >How to Vote</a
+              >
+            </li>
+            <li>
+              <a class="main-nav-link color-text" href="./verify-vote.html"
+                >Verify Vote</a
+              >
+            </li>
+          </ul>
+          <ul class="main-nav-list">
+            <li>
+              <a class="main-nav-link color-text link-login" href="./login.html"
+                >Login</a
+              >
+            </li>
+            <li>
+              <a
+                class="main-nav-link color-text link-register"
+                href="./register.html"
+                >Register</a
+              >
+            </li>
+            <li>
+              <a class="main-nav-link color-text link-admin" href="./admin.html"
+                >Admin</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <section class="section-how-to-vote flex-column margin-bottom-5">
+          <header class="header-how-to-vote text-center margin-bottom-5">
+            <h1 class="primary-color primary-heading margin-bottom-1">
+              How to Vote
+            </h1>
+            <p>A simple guide to participating in the election.</p>
+          </header>
+          <div class="how-to-vote-box accordion">
+            <div class="accordion-item margin-bottom-1">
+              <header class="header-accordion-item flex-row">
+                <div class="flex-row accordion-name-box">
+                  <p class="primary-color">
+                    <ion-icon name="person" class="accordion-icon"></ion-icon>
+                  </p>
+                  <p class="accordion-name color-dark">
+                    Check your eligibility
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    <ion-icon
+                      name="chevron-down"
+                      class="accordion-closed"
+                    ></ion-icon>
+                  </p>
+                  <p>
+                    <ion-icon
+                      name="chevron-up"
+                      class="accordion-open"
+                    ></ion-icon>
+                  </p>
+                </div>
+              </header>
+
+              <div class="accordion-item-detail">
+                Ensure you are a registered voter in Nigeria and have your
+                Permanent Voter's Card (PVC). You must be at least 18 years old.
+              </div>
+            </div>
+
+            <div class="accordion-item margin-bottom-1">
+              <header class="header-accordion-item flex-row">
+                <div class="flex-row accordion-name-box">
+                  <p class="primary-color">
+                    <ion-icon name="book" class="accordion-icon"></ion-icon>
+                  </p>
+                  <p class="accordion-name color-dark">Educate yourself</p>
+                </div>
+                <div>
+                  <p>
+                    <ion-icon
+                      name="chevron-down"
+                      class="accordion-closed"
+                    ></ion-icon>
+                  </p>
+                  <p>
+                    <ion-icon
+                      name="chevron-up"
+                      class="accordion-open"
+                    ></ion-icon>
+                  </p>
+                </div>
+              </header>
+
+              <div class="accordion-item-detail">
+                Review the candidate profiles on this page to make an informed
+                decision. Understand their platforms and what they stand for.
+              </div>
+            </div>
+
+            <div class="accordion-item margin-bottom-1">
+              <header class="header-accordion-item flex-row">
+                <div class="flex-row accordion-name-box">
+                  <p class="primary-color">
+                    <ion-icon
+                      name="checkbox-outline"
+                      class="accordion-icon"
+                    ></ion-icon>
+                  </p>
+                  <p class="accordion-name color-dark">Cast your vote</p>
+                </div>
+                <div>
+                  <p>
+                    <ion-icon
+                      name="chevron-down"
+                      class="accordion-closed"
+                    ></ion-icon>
+                  </p>
+                  <p>
+                    <ion-icon
+                      name="chevron-up"
+                      class="accordion-open"
+                    ></ion-icon>
+                  </p>
+                </div>
+              </header>
+
+              <div class="accordion-item-detail">
+                Navigate to the 'Vote' page, select your chosen candidate, and
+                submit your vote. You will receive a unique transaction ID for
+                verification.
+              </div>
+            </div>
+
+            <div class="accordion-item margin-bottom-1">
+              <header class="header-accordion-item flex-row">
+                <div class="flex-row accordion-name-box">
+                  <p class="primary-color">
+                    <ion-icon name="stats" class="accordion-icon"></ion-icon>
+                  </p>
+                  <p class="accordion-name color-dark">
+                    Verify and follow results
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    <ion-icon
+                      name="chevron-down"
+                      class="accordion-closed"
+                    ></ion-icon>
+                  </p>
+                  <p>
+                    <ion-icon
+                      name="chevron-up"
+                      class="accordion-open"
+                    ></ion-icon>
+                  </p>
+                </div>
+              </header>
+
+              <div class="accordion-item-detail">
+                Use your transaction ID on the 'Verify Vote' page to confirm
+                your vote was recorded. You can also follow the live results on
+                the 'Results' page.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-about-candidate flex-column margin-bottom-5">
+          <header class="header-about-candidate text-center margin-bottom-5">
+            <h1 class="primary-heading primary-color margin-bottom-1">
+              Meet the candidates
+            </h1>
+            <p>Learn more about the individuals running for office.</p>
+          </header>
+          <div class="about-candidate-container grid grid-cols-2">
+            <div class="about-candidate">
+              <div>
+                <header class="flex-row candidate-name-box margin-bottom-2">
+                  <div class="candidate-img-box">
+                    <img src="#" alt="Headshot of the candidate" />
+                  </div>
+                  <div>
+                    <p class="color-dark candidate-name">
+                      Khaled Muhammed Jibril
+                    </p>
+                    <p class="candidate-party">Unity & Progress Party (UPP)</p>
+                  </div>
+                </header>
+              </div>
+              <div class="candidate-detail">
+                <p>
+                  Khaled Muhammed Jibril is a seasoned administrator with over
+                  20 years of experience in public service. He promises to focus
+                  on economic diversification and youth empowerment.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-candidate">
+              <div>
+                <header class="flex-row candidate-name-box margin-bottom-2">
+                  <div class="candidate-img-box">
+                    <img src="#" alt="Headshot of the candidate" />
+                  </div>
+                  <div>
+                    <p class="color-dark candidate-name">Ngozi Okoro</p>
+                    <p class="candidate-party">New Nigeria Alliance (NNA)</p>
+                  </div>
+                </header>
+              </div>
+              <div class="candidate-detail">
+                <p>
+                  Ngozi Okoro is a renowned economist and activist. Her campaign
+                  is centered on transparency, anti-corruption, and investing in
+                  education and healthcare.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-candidate">
+              <div>
+                <header class="flex-row candidate-name-box margin-bottom-2">
+                  <div class="candidate-img-box">
+                    <img src="#" alt="Headshot of the candidate" />
+                  </div>
+                  <div>
+                    <p class="color-dark candidate-name">Yakubu Danjuma</p>
+                    <p class="candidate-party">
+                      People's Democratic Coalition (PDC)
+                    </p>
+                  </div>
+                </header>
+              </div>
+              <div class="candidate-detail">
+                <p>
+                  A former military general, Yakubu Danjuma is running on a
+                  platform of national security and infrastructure development.
+                  He pledges to bring stability and discipline to governance.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-candidate">
+              <div>
+                <header class="flex-row candidate-name-box margin-bottom-2">
+                  <div class="candidate-img-box">
+                    <img src="#" alt="Headshot of the candidate" />
+                  </div>
+                  <div>
+                    <p class="color-dark candidate-name">Fatima Bello</p>
+                    <p class="candidate-party">Social Justice Movement (SJM)</p>
+                  </div>
+                </header>
+              </div>
+              <div class="candidate-detail">
+                <p>
+                  Fatima Bello is a lawyer and human rights advocate. She is
+                  dedicated to fighting for social equality, environmental
+                  protection, and justice for all Nigerians.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <p>&copy; 2023 Naija Votes. All rights reserved.</p>
+      <p><a href="#" class="link report-link">Report an Issue / Feedback</a></p>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
