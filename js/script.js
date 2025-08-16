@@ -3,7 +3,6 @@ Admin Page Script
 */
 // Action Buttons
 const btnOverviewEl = document.querySelector(".btn-overview");
-const btnAiAuditEl = document.querySelector(".btn-ai-audit");
 const btnFeedbackEl = document.querySelector(".btn-feedback");
 
 // Event Listeners
@@ -13,21 +12,11 @@ btnOverviewEl.addEventListener("click", () => {
     console.log("pass");
   } else {
     btnOverviewEl.classList.add("active");
+    // Show Overview content
+    document.querySelector(".admin-overview").style.display = "flex";
+    document.querySelector(".admin-feedback").style.display = "none";
 
     // Remove active class from the rest Buttons
-    btnAiAuditEl.classList.remove("active");
-    btnFeedbackEl.classList.remove("active");
-  }
-});
-
-btnAiAuditEl.addEventListener("click", () => {
-  // Handle AI Audit button click
-  if (btnAiAuditEl.classList.contains("active")) {
-    console.log("Pass");
-  } else {
-    btnAiAuditEl.classList.add("active");
-    // Remove active class from the rest Buttons
-    btnOverviewEl.classList.remove("active");
     btnFeedbackEl.classList.remove("active");
   }
 });
@@ -38,8 +27,10 @@ btnFeedbackEl.addEventListener("click", () => {
     console.log("Pass");
   } else {
     btnFeedbackEl.classList.add("active");
+    // Show Feedback content
+    document.querySelector(".admin-feedback").style.display = "block";
+    document.querySelector(".admin-overview").style.display = "none";
     // Remove active class from the rest Buttons
-    btnAiAuditEl.classList.remove("active");
     btnOverviewEl.classList.remove("active");
   }
 });

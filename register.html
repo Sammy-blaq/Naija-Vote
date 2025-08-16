@@ -27,123 +27,137 @@
     <title>Naija Votes &mdash; Your Voice, Your Vote</title>
   </head>
   <body class="color-text">
-    <header class="main-header margin-bottom-5">
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a class="main-nav-link primary-color link-home" href="./index.html"
-              ><ion-icon name="laptop-outline" class="logo-icon"></ion-icon
-              >Naija Votes</a
-            >
-          </li>
-        </ul>
-
-        <div class="main-nav-links-box">
-          <ul class="main-nav-list">
-            <li>
-              <a class="main-nav-link link-vote primary-color" href="#">Vote</a>
-            </li>
-            <li><a class="main-nav-link color-text" href="#">Results</a></li>
-            <li>
-              <a class="main-nav-link color-text" href="#">How to Vote</a>
-            </li>
-            <li>
-              <a class="main-nav-link color-text" href="#">Verify Vote</a>
-            </li>
-          </ul>
-          <ul class="main-nav-list">
-            <li>
-              <a class="main-nav-link color-text link-login" href="./login.html"
-                >Login</a
-              >
-            </li>
-            <li>
-              <a
-                class="main-nav-link color-text link-register"
-                href="./register.html"
-                >Register</a
-              >
-            </li>
-            <li>
-              <a class="main-nav-link color-text link-admin" href="./admin.html"
-                >Admin</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <div class="container log-in-container margin-bottom-5">
-        <section class="login-box">
-          <header class="login-header margin-bottom-2">
-            <p><ion-icon name="person-add" class="login-icon"></ion-icon></p>
-            <div class="login-textbox">
-              <h2 class="login-title color-dark">Register To Vote</h2>
-              <p>Please use a valid Voter's Card ID to register.</p>
-            </div>
-          </header>
-          <form class="login-form">
-            <div class="form-group">
-              <label for="id-type" class="label">ID Type</label>
-              <div class="radio-group">
-                <input
-                  type="radio"
-                  name="id-type"
-                  id="id-type-voters-card"
-                  value="voters-card"
-                  checked
-                />
-                <label for="id-type-voters-card" class="label"
-                  >Voter's Card</label
+    <div class="wrapper">
+      <header class="main-header margin-bottom-5">
+        <a class="main-nav-link primary-color link-home" href="./index.html"
+          ><ion-icon name="laptop-outline" class="logo-icon"></ion-icon>Naija
+          Votes</a
+        >
+        <nav class="main-nav">
+          <div class="main-nav-links-box">
+            <ul class="main-nav-list">
+              <li>
+                <a class="main-nav-link link-vote primary-color" href="#"
+                  >Vote</a
                 >
+              </li>
+              <li><a class="main-nav-link color-text" href="#">Results</a></li>
+              <li>
+                <a class="main-nav-link color-text" href="./how-to-vote.html"
+                  >How to Vote</a
+                >
+              </li>
+              <li>
+                <a class="main-nav-link color-text" href="./verify-vote.html"
+                  >Verify Vote</a
+                >
+              </li>
+            </ul>
+            <ul class="main-nav-list">
+              <li>
+                <a
+                  class="main-nav-link color-text link-login"
+                  href="./login.html"
+                  >Login</a
+                >
+              </li>
+              <li>
+                <a
+                  class="main-nav-link color-text link-register"
+                  href="./register.html"
+                  >Register</a
+                >
+              </li>
+              <li>
+                <a
+                  class="main-nav-link color-text link-admin"
+                  href="./admin.html"
+                  >Admin</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </header>
+      <main class="main-content">
+        <div class="container log-in-container margin-bottom-5">
+          <section class="login-box">
+            <header class="login-header margin-bottom-2">
+              <p><ion-icon name="person-add" class="login-icon"></ion-icon></p>
+              <div class="login-textbox">
+                <h2 class="login-title color-dark">Register To Vote</h2>
+                <p class="">Please use a valid Voter's Card ID to register.</p>
               </div>
-            </div>
-            <div class="form-group">
-              <label for="id-number" class="label color-dark"
-                >ID Number (Voter's Card)</label
-              >
-              <input
-                type="text"
-                class="input input-id"
-                id="id-number"
-                placeholder="Enter your ID number"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="password" class="label color-dark">Password</label>
-              <input
-                type="password"
-                class="input input-password"
-                id="password"
-                placeholder="Enter your password"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="confirm-password" class="label color-dark"
-                >Confirm Password</label
-              >
-              <input
-                type="password"
-                class="input input-password"
-                id="confirm-password"
-                placeholder="Confirm your password"
-                required
-              />
-            </div>
-            <button type="button" class="btn btn-primary btn-register">
-              Register
-            </button>
-          </form>
-        </section>
-      </div>
-    </main>
-
-    <footer class="main-footer">
-      <p>&copy; 2023 Naija Votes. All rights reserved.</p>
-      <p><a href="#" class="link report-link">Report an Issue / Feedback</a></p>
-    </footer>
+            </header>
+            <form class="login-form">
+              <div class="form-group">
+                <label for="id-type" class="label">ID Type</label>
+                <div class="radio-group">
+                  <input
+                    type="radio"
+                    name="id-type"
+                    id="id-type-voters-card"
+                    value="voters-card"
+                    checked
+                  />
+                  <label for="id-type-voters-card" class="label"
+                    >Voter's Card</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="id-number" class="label color-dark"
+                  >ID Number (Voter's Card)</label
+                >
+                <input
+                  type="text"
+                  class="input input-id"
+                  id="id-number"
+                  placeholder="Enter your ID number"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="password" class="label color-dark">Password</label>
+                <input
+                  type="password"
+                  class="input input-password"
+                  id="password"
+                  placeholder="Enter your password"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="confirm-password" class="label color-dark"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  class="input input-password"
+                  id="confirm-password"
+                  placeholder="Confirm your password"
+                  required
+                />
+              </div>
+              <button type="button" class="btn btn-primary btn-register">
+                Register
+              </button>
+            </form>
+          </section>
+        </div>
+      </main>
+      <footer class="main-footer">
+        <p>&copy; 2023 Naija Votes. All rights reserved.</p>
+        <p>
+          <a href="./reports.html" class="link report-link"
+            >Report an Issue / Feedback</a
+          >
+        </p>
+      </footer>
+    </div>
   </body>
 </html>

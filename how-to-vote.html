@@ -33,22 +33,25 @@
   </head>
   <body class="color-text">
     <header class="main-header margin-bottom-5">
+      <a class="main-nav-link primary-color link-home" href="./index.html"
+        ><ion-icon name="laptop-outline" class="logo-icon"></ion-icon>Naija
+        Votes</a
+      >
       <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a class="main-nav-link primary-color link-home" href="./index.html"
-              ><ion-icon name="laptop-outline" class="logo-icon"></ion-icon
-              >Naija Votes</a
-            >
-          </li>
-        </ul>
-
         <div class="main-nav-links-box">
           <ul class="main-nav-list">
             <li>
-              <a class="main-nav-link link-vote primary-color" href="#">Vote</a>
+              <a
+                class="main-nav-link link-vote primary-color"
+                href="./index.html"
+                >Vote</a
+              >
             </li>
-            <li><a class="main-nav-link color-text" href="#">Results</a></li>
+            <li>
+              <a class="main-nav-link color-text" href="./results.html"
+                >Results</a
+              >
+            </li>
             <li>
               <a class="main-nav-link color-text" href="./how-to-vote.html"
                 >How to Vote</a
@@ -81,6 +84,10 @@
           </ul>
         </div>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <div class="container">
@@ -106,19 +113,19 @@
                   <p>
                     <ion-icon
                       name="chevron-down"
-                      class="accordion-closed"
+                      class="accordion-icon-down"
                     ></ion-icon>
                   </p>
                   <p>
                     <ion-icon
                       name="chevron-up"
-                      class="accordion-open"
+                      class="accordion-icon-up"
                     ></ion-icon>
                   </p>
                 </div>
               </header>
 
-              <div class="accordion-item-detail">
+              <div class="accordion-item-detail margin-bottom-2">
                 Ensure you are a registered voter in Nigeria and have your
                 Permanent Voter's Card (PVC). You must be at least 18 years old.
               </div>
@@ -136,19 +143,19 @@
                   <p>
                     <ion-icon
                       name="chevron-down"
-                      class="accordion-closed"
+                      class="accordion-icon-down"
                     ></ion-icon>
                   </p>
                   <p>
                     <ion-icon
                       name="chevron-up"
-                      class="accordion-open"
+                      class="accordion-icon-up"
                     ></ion-icon>
                   </p>
                 </div>
               </header>
 
-              <div class="accordion-item-detail">
+              <div class="accordion-item-detail margin-bottom-2">
                 Review the candidate profiles on this page to make an informed
                 decision. Understand their platforms and what they stand for.
               </div>
@@ -169,19 +176,19 @@
                   <p>
                     <ion-icon
                       name="chevron-down"
-                      class="accordion-closed"
+                      class="accordion-icon-down"
                     ></ion-icon>
                   </p>
                   <p>
                     <ion-icon
                       name="chevron-up"
-                      class="accordion-open"
+                      class="accordion-icon-up"
                     ></ion-icon>
                   </p>
                 </div>
               </header>
 
-              <div class="accordion-item-detail">
+              <div class="accordion-item-detail margin-bottom-2">
                 Navigate to the 'Vote' page, select your chosen candidate, and
                 submit your vote. You will receive a unique transaction ID for
                 verification.
@@ -202,19 +209,19 @@
                   <p>
                     <ion-icon
                       name="chevron-down"
-                      class="accordion-closed"
+                      class="accordion-icon-down"
                     ></ion-icon>
                   </p>
                   <p>
                     <ion-icon
                       name="chevron-up"
-                      class="accordion-open"
+                      class="accordion-icon-up"
                     ></ion-icon>
                   </p>
                 </div>
               </header>
 
-              <div class="accordion-item-detail">
+              <div class="accordion-item-detail margin-bottom-2">
                 Use your transaction ID on the 'Verify Vote' page to confirm
                 your vote was recorded. You can also follow the live results on
                 the 'Results' page.
@@ -325,8 +332,12 @@
 
     <footer class="main-footer">
       <p>&copy; 2023 Naija Votes. All rights reserved.</p>
-      <p><a href="#" class="link report-link">Report an Issue / Feedback</a></p>
+      <p>
+        <a href="./reports.html" class="link report-link"
+          >Report an Issue / Feedback</a
+        >
+      </p>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./js/how-to-vote.js"></script>
   </body>
 </html>

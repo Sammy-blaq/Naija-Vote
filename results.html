@@ -13,6 +13,12 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <!-- Google Fonts (Inter)-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,9 +26,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Tailwindcss -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <link rel="stylesheet" href="./css/queries.css" />
     <link rel="stylesheet" href="./css/general.css" />
@@ -87,103 +90,31 @@
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
       </button>
     </header>
-    <main class="">
+    <main>
       <div class="container">
         <section class="hero margin-bottom-5">
-          <span
-            ><ion-icon name="laptop-outline" class="hero-icon"></ion-icon
-          ></span>
+          <span>
+            <i
+              class="fa fa-bar-chart primary-color result-icon"
+              aria-hidden="true"
+            ></i>
+          </span>
           <div class="hero-text">
-            <h1 class="hero-title">Cast Your Vote</h1>
-            <p>Select your preferred candidate and make your voice heard.</p>
+            <h1 class="primary-heading primary-color">Live Election Results</h1>
+            <p>
+              Results are updated in real-time. Total votes cast:
+              <span class="vote-count">0</span>.
+            </p>
           </div>
         </section>
 
-        <section class="candidates margin-bottom-10">
+        <section class="section-results margin-bottom-5">
           <header>
-            <h2 class="secondary-heading margin-bottom-2">Candidates</h2>
+            <p class="secondary-heading color-dark">Candidate Standings</p>
           </header>
-
-          <div class="candidates-box grid grid-cols-2 margin-bottom-3">
-            <div class="candidate">
-              <div class="candidate-inner">
-                <img
-                  src="./img/Blue eyes [Original] (5600x3600).png"
-                  class="candidate-img"
-                  alt="candidate-1"
-                />
-                <div class="candidate-info">
-                  <p class="candidate-name color-dark">Khaled Jibril</p>
-                  <p>Unity & Progress Party (UPP)</p>
-                </div>
-              </div>
-              <img
-                src="./img/963f0b7.jpg"
-                alt="Party Logo"
-                class="party-logo"
-              />
-            </div>
-            <div class="candidate">
-              <div class="candidate-inner">
-                <img
-                  src="./img/Blue eyes [Original] (5600x3600).png"
-                  class="candidate-img"
-                  alt="candidate-2"
-                />
-                <div class="candidate-info">
-                  <p class="candidate-name color-dark">Aisha Bello</p>
-                  <p>New Nigeria Alliance (NNA)</p>
-                </div>
-              </div>
-              <img
-                src="./img/963f0b7.jpg"
-                alt="Party Logo"
-                class="party-logo"
-              />
-            </div>
-            <div class="candidate">
-              <div class="candidate-inner">
-                <img
-                  src="./img/Blue eyes [Original] (5600x3600).png"
-                  class="candidate-img"
-                  alt="candidate-3"
-                />
-                <div class="candidate-info">
-                  <p class="candidate-name color-dark">Chinedu Okeke</p>
-                  <p>People Democratic Coalition (PDC)</p>
-                </div>
-              </div>
-              <img
-                src="./img/963f0b7.jpg"
-                alt="Party Logo"
-                class="party-logo"
-              />
-            </div>
-            <div class="candidate">
-              <div class="candidate-inner">
-                <img
-                  src="./img/Blue eyes [Original] (5600x3600).png"
-                  class="candidate-img"
-                  alt="candidate-4"
-                />
-                <div class="candidate-info">
-                  <p class="candidate-name color-dark">Fatima Abubakar</p>
-                  <p>Social Justice Movement (SJM)</p>
-                </div>
-              </div>
-              <img
-                src="./img/963f0b7.jpg"
-                alt="Party Logo"
-                class="party-logo"
-              />
-            </div>
+          <div class="result-display">
+            <p>No votes have been cast yet.</p>
           </div>
-          <button
-            type="button"
-            class="btn btn-primary btn-cast-vote margin-bottom-5"
-          >
-            Cast My Vote
-          </button>
         </section>
       </div>
     </main>

@@ -12,6 +12,11 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- Google Fonts (Inter)-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,11 +42,17 @@
           <div class="main-nav-links-box">
             <ul class="main-nav-list">
               <li>
-                <a class="main-nav-link link-vote primary-color" href="#"
+                <a
+                  class="main-nav-link link-vote primary-color"
+                  href="./index.html"
                   >Vote</a
                 >
               </li>
-              <li><a class="main-nav-link color-text" href="#">Results</a></li>
+              <li>
+                <a class="main-nav-link color-text" href="./results.html"
+                  >Results</a
+                >
+              </li>
               <li>
                 <a class="main-nav-link color-text" href="./how-to-vote.html"
                   >How to Vote</a
@@ -84,45 +95,49 @@
         </button>
       </header>
       <main class="main-content">
-        <div class="container log-in-container margin-bottom-5">
-          <section class="login-box">
-            <header class="login-header margin-bottom-2">
-              <p><ion-icon name="log-in" class="login-icon"></ion-icon></p>
-              <div class="login-textbox">
-                <h2 class="login-title color-dark">Login to Your Account</h2>
-                <p class="sub-text">
-                  Enter your ID number and password to access the voting
-                  platform.
-                </p>
-              </div>
-            </header>
-            <form class="login-form">
-              <div class="form-group">
-                <label for="id-number" class="label color-dark"
-                  >ID Number (Voter's Card)</label
+        <div class="container">
+          <section class="section-verify-vote section-reports">
+            <div class="verify-vote-outer">
+              <div class="verify-vote-inner report-box">
+                <header class="header-verify">
+                  <p class="verify-vote-icon-box">
+                    <ion-icon
+                      name="chatbox-ellipses-outline"
+                      class="verify-vote-icon"
+                    ></ion-icon>
+                  </p>
+                  <div class="verify-text-box margin-bottom-5">
+                    <h1 class="secondary-heading color-dark">
+                      Submit Feedback
+                    </h1>
+                    <p>
+                      Have an issue or a suggestion? We'd love to hear from you.
+                    </p>
+                  </div>
+                </header>
+                <div class="verify-vote-group margin-bottom-2">
+                  <label
+                    for="feedback-message"
+                    class="label color-dark verify-vote-label"
+                    >Your Message</label
+                  >
+                  <textarea
+                    name="feedback-message"
+                    id=""
+                    class="report"
+                    cols="30"
+                    rows="10"
+                    placeholder="PLease describe your feedback or issue here in detail..."
+                  ></textarea>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-submit-report margin-bottom-2"
                 >
-                <input
-                  type="text"
-                  class="input input-id"
-                  id="id-number"
-                  placeholder="Enter your ID number"
-                  required
-                />
+                  Submit
+                </button>
               </div>
-              <div class="form-group">
-                <label for="password" class="label color-dark">Password</label>
-                <input
-                  type="password"
-                  class="input input-password"
-                  id="password"
-                  placeholder="Enter your password"
-                  required
-                />
-              </div>
-              <button type="button" class="btn btn-primary btn-sign-in">
-                Login
-              </button>
-            </form>
+            </div>
           </section>
         </div>
       </main>
@@ -135,5 +150,6 @@
         </p>
       </footer>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>

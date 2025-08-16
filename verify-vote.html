@@ -32,97 +32,124 @@
     <title>Naija Votes &mdash; Your Voice, Your Vote</title>
   </head>
   <body class="color-text">
-    <header class="main-header margin-bottom-5">
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a class="main-nav-link primary-color link-home" href="./index.html"
-              ><ion-icon name="laptop-outline" class="logo-icon"></ion-icon
-              >Naija Votes</a
-            >
-          </li>
-        </ul>
-
-        <div class="main-nav-links-box">
-          <ul class="main-nav-list">
-            <li>
-              <a class="main-nav-link link-vote primary-color" href="#">Vote</a>
-            </li>
-            <li><a class="main-nav-link color-text" href="#">Results</a></li>
-            <li>
-              <a class="main-nav-link color-text" href="./how-to-vote.html"
-                >How to Vote</a
-              >
-            </li>
-            <li>
-              <a class="main-nav-link color-text" href="./verify-vote.html"
-                >Verify Vote</a
-              >
-            </li>
-          </ul>
-          <ul class="main-nav-list">
-            <li>
-              <a class="main-nav-link color-text link-login" href="./login.html"
-                >Login</a
-              >
-            </li>
-            <li>
-              <a
-                class="main-nav-link color-text link-register"
-                href="./register.html"
-                >Register</a
-              >
-            </li>
-            <li>
-              <a class="main-nav-link color-text link-admin" href="./admin.html"
-                >Admin</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <div class="container">
-        <section class="section-verify-vote">
-          <div class="verify-vote-outer">
-            <div class="verify-vote-inner">
-              <header class="header-verify">
-                <p class="verify-vote-icon-box">
-                  <ion-icon
-                    name="shield-checkmark-outline"
-                    class="verify-vote-icon"
-                  ></ion-icon>
-                </p>
-                <div class="verify-text-box margin-bottom-5">
-                  <h1 class="secondary-heading color-dark">Verify your Vote</h1>
-                  <p>
-                    Enter the unique transaction ID you received after voting to
-                    confirm your vote was recorded.
-                  </p>
-                </div>
-              </header>
-              <div class="verify-vote-group margin-bottom-2">
-                <label
-                  for="transaction-id"
-                  class="label color-dark verify-vote-label"
-                  >Transaction ID</label
+    <div class="wrapper">
+      <header class="main-header margin-bottom-5">
+        <a class="main-nav-link primary-color link-home" href="./index.html"
+          ><ion-icon name="laptop-outline" class="logo-icon"></ion-icon>Naija
+          Votes</a
+        >
+        <nav class="main-nav">
+          <div class="main-nav-links-box">
+            <ul class="main-nav-list">
+              <li>
+                <a
+                  class="main-nav-link link-vote primary-color"
+                  href="./index.html"
+                  >Vote</a
                 >
-                <input type="text" name="transaction-id" id="" class="input" />
-              </div>
-              <button type="button" class="btn btn-verify-vote margin-bottom-2">
-                Verify
-              </button>
-            </div>
+              </li>
+              <li>
+                <a class="main-nav-link color-text" href="./results.html"
+                  >Results</a
+                >
+              </li>
+              <li>
+                <a class="main-nav-link color-text" href="./how-to-vote.html"
+                  >How to Vote</a
+                >
+              </li>
+              <li>
+                <a class="main-nav-link color-text" href="./verify-vote.html"
+                  >Verify Vote</a
+                >
+              </li>
+            </ul>
+            <ul class="main-nav-list">
+              <li>
+                <a
+                  class="main-nav-link color-text link-login"
+                  href="./login.html"
+                  >Login</a
+                >
+              </li>
+              <li>
+                <a
+                  class="main-nav-link color-text link-register"
+                  href="./register.html"
+                  >Register</a
+                >
+              </li>
+              <li>
+                <a
+                  class="main-nav-link color-text link-admin"
+                  href="./admin.html"
+                  >Admin</a
+                >
+              </li>
+            </ul>
           </div>
-        </section>
-      </div>
-    </main>
-
-    <footer class="main-footer">
-      <p>&copy; 2023 Naija Votes. All rights reserved.</p>
-      <p><a href="#" class="link report-link">Report an Issue / Feedback</a></p>
-    </footer>
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </header>
+      <main class="main-content">
+        <div class="container">
+          <section class="section-verify-vote margin-bottom-10">
+            <div class="verify-vote-outer">
+              <div class="verify-vote-inner">
+                <header class="header-verify">
+                  <p class="verify-vote-icon-box">
+                    <ion-icon
+                      name="shield-checkmark-outline"
+                      class="verify-vote-icon"
+                    ></ion-icon>
+                  </p>
+                  <div class="verify-text-box margin-bottom-5">
+                    <h1 class="secondary-heading color-dark">
+                      Verify your Vote
+                    </h1>
+                    <p>
+                      Enter the unique transaction ID you received after voting
+                      to confirm your vote was recorded.
+                    </p>
+                  </div>
+                </header>
+                <div class="verify-vote-group margin-bottom-2">
+                  <label
+                    for="transaction-id"
+                    class="label color-dark verify-vote-label"
+                    >Transaction ID</label
+                  >
+                  <input
+                    type="text"
+                    name="transaction-id"
+                    id=""
+                    class="input"
+                    placeholder="NJA-..."
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-verify-vote margin-bottom-2"
+                >
+                  Verify
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="main-footer">
+        <p>&copy; 2023 Naija Votes. All rights reserved.</p>
+        <p>
+          <a href="./reports.html" class="link report-link"
+            >Report an Issue / Feedback</a
+          >
+        </p>
+      </footer>
+    </div>
     <script src="./js/script.js"></script>
   </body>
 </html>
