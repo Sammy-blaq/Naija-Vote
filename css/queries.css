@@ -37,8 +37,6 @@
   /* ADMIN PAGE */
 
   .admin-overview {
-    /* flex-wrap: wrap; */
-    display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }

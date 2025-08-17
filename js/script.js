@@ -13,7 +13,7 @@ btnOverviewEl.addEventListener("click", () => {
   } else {
     btnOverviewEl.classList.add("active");
     // Show Overview content
-    document.querySelector(".admin-overview").style.display = "flex";
+    document.querySelector(".admin-overview").style.display = "grid";
     document.querySelector(".admin-feedback").style.display = "none";
 
     // Remove active class from the rest Buttons

@@ -326,7 +326,6 @@ HERO SECTION */
 
 /* Admin Overview */
 .admin-overview {
-  display: flex;
   justify-content: space-between;
   gap: 2rem;
 }
