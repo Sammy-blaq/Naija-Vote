@@ -53,12 +53,14 @@
     backdrop-filter: blur(10px);
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 50vh;
     height: 100vh;
     transform: translateX(100%);
+    padding: 10rem 0;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.5 ease-in;
@@ -77,6 +79,17 @@
     visibility: hidden;
   }
 
+  .main-nav-list,
+  .main-nav-links-box {
+    flex-direction: column;
+    align-items: center !important;
+    gap: 4rem !important;
+  }
+
+  .main-nav-links-box {
+    gap: 10rem !important;
+  }
+
   .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
@@ -89,6 +102,10 @@
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
+    border: 2px solid #3cb371;
+    padding: 1rem;
+    border-radius: 50%;
+
     display: block;
   }
 
