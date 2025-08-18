@@ -188,6 +188,30 @@
       </div>
     </main>
 
+    <div class="verify_code_box container">
+      <div class="verify_code_card">
+        <header>
+          <ion-icon
+            name="checkmark-circle-outline"
+            class="verify_code_icon"
+          ></ion-icon>
+          <p class="verify_code_text">
+            Your vote has been securely and anonymously recorded. Use the ID
+            below to verify your vote.
+          </p>
+        </header>
+        <div>
+          <input
+            type="text"
+            name="verification_code"
+            id="verification_code"
+            class="input verify_code_input"
+          />
+        </div>
+        <button type="button" class="btn btn-primary btn-verify">Close</button>
+      </div>
+    </div>
+
     <footer class="main-footer">
       <p>&copy; 2023 Naija Votes. All rights reserved.</p>
       <p>
@@ -197,5 +221,6 @@
       </p>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

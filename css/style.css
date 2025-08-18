@@ -233,6 +233,40 @@ HERO SECTION */
   color: inherit;
 }
 
+/* Verify Code Box */
+
+.verify_code_box {
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+}
+
+.verify-code-card {
+  width: 50%;
+  background-color: #fff;
+  padding: 2rem 3rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.verify_code_icon {
+  font-size: 6rem;
+  color: #3cb371;
+}
+
+.verify_code_card {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 /* ************************
   CSS for Login Login page
 ************************
