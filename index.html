@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Naija Votes &mdash; Your Voice, Your Vote</title>
   </head>
-  <body class="color-text">
+  <body class="color-text body-index">
     <header class="main-header margin-bottom-5">
       <a class="main-nav-link primary-color link-home" href="./index.html"
         ><ion-icon name="laptop-outline" class="logo-icon"></ion-icon>Naija
@@ -105,7 +105,7 @@
           </header>
 
           <div class="candidates-box grid grid-cols-2 margin-bottom-3">
-            <div class="candidate">
+            <div class="candidate candidate-1">
               <div class="candidate-inner">
                 <img
                   src="./img/Blue eyes [Original] (5600x3600).png"
@@ -123,7 +123,7 @@
                 class="party-logo"
               />
             </div>
-            <div class="candidate">
+            <div class="candidate candidate-2">
               <div class="candidate-inner">
                 <img
                   src="./img/Blue eyes [Original] (5600x3600).png"
@@ -141,7 +141,7 @@
                 class="party-logo"
               />
             </div>
-            <div class="candidate">
+            <div class="candidate candidate-3">
               <div class="candidate-inner">
                 <img
                   src="./img/Blue eyes [Original] (5600x3600).png"
@@ -159,7 +159,7 @@
                 class="party-logo"
               />
             </div>
-            <div class="candidate">
+            <div class="candidate candidate-4">
               <div class="candidate-inner">
                 <img
                   src="./img/Blue eyes [Original] (5600x3600).png"
@@ -188,27 +188,39 @@
       </div>
     </main>
 
-    <div class="verify_code_box container">
-      <div class="verify_code_card">
-        <header>
+    <div class="verify-code-box">
+      <div class="verify-code-card">
+        <header class="verify-code-header margin-bottom-3">
           <ion-icon
             name="checkmark-circle-outline"
-            class="verify_code_icon"
+            class="verify-code-icon"
           ></ion-icon>
-          <p class="verify_code_text">
+          <h1 class="secondary-heading color-dark">Vote Confirmed!</h1>
+          <p class="verify-code-text">
             Your vote has been securely and anonymously recorded. Use the ID
             below to verify your vote.
           </p>
         </header>
-        <div>
+        <div class="flex margin-bottom-3">
           <input
             type="text"
             name="verification_code"
             id="verification_code"
             class="input verify_code_input"
           />
+          <button type="button" class="btn btn-secondary btn-copy">
+            <ion-icon
+              name="copy-outline"
+              class="icon-copy color-dark"
+            ></ion-icon>
+          </button>
         </div>
-        <button type="button" class="btn btn-primary btn-verify">Close</button>
+        <button
+          type="button"
+          class="btn btn-primary btn-verify-close margin-bottom-2"
+        >
+          Close
+        </button>
       </div>
     </div>
 

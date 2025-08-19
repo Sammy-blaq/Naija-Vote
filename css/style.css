@@ -117,6 +117,7 @@ HEADER
 }
 
 .icon-mobile-nav[name="close-outline"] {
+  z-index: 1000 !important;
   display: none;
 }
 
@@ -235,36 +236,82 @@ HERO SECTION */
 
 /* Verify Code Box */
 
-.verify_code_box {
-  width: 100%;
-  position: fixed;
+.body-index {
+  position: relative;
+}
+
+.verify-code-box {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 1.5rem;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.7);
+
+  display: none; /* Hide by default */
 }
 
-.verify-code-card {
-  width: 50%;
-  background-color: #fff;
-  padding: 2rem 3rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.verify_code_icon {
-  font-size: 6rem;
+.verify-code-icon {
+  font-size: 7rem;
   color: #3cb371;
 }
 
-.verify_code_card {
-  background-color: #fff;
+.verify-code-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem;
+  max-width: 50rem;
+  background-color: #e5f5e9;
   padding: 2rem 3rem;
   border-radius: 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.verify-code-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.verify-code-text {
+  font-size: 1.6rem;
+}
+
+.verify_code_input {
+  padding: 2rem 1rem;
+  background-color: rgba(48, 143, 91, 0.1);
+  border: none;
+}
+
+.btn-copy {
+  margin-left: -5.5rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-copy {
+  font-size: 2rem;
+}
+
+.btn-copy:hover {
+  background-color: #ffd700;
+}
+
+.btn-verify-close:hover {
+  background-color: #63c28d;
 }
 
 /* ************************
@@ -289,6 +336,8 @@ HERO SECTION */
 }
 
 .login-icon {
+  /* position: absolute; */
+  z-index: 1;
   font-size: 4rem;
   color: #3cb371;
   padding: 1rem;
@@ -610,6 +659,7 @@ HERO SECTION */
 */
 .section-results {
   margin: 0 3rem;
+  margin-bottom: 5rem;
   padding: 2rem 2rem;
   background-color: #f9f9f9;
   border-radius: 1.5rem;
