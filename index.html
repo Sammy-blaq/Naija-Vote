@@ -99,6 +99,46 @@
           </div>
         </section>
 
+        <section
+          class="section-election-select flex justify-between gap-[3rem]"
+        >
+          <div class="flex flex-col w-full gap-[1rem]">
+            <label for="election-type" class="color-dark font-bold"
+              >Select Election Type</label
+            >
+
+            <select name="election-type" id="" class="input select-election">
+              <option value="" selected>Select an election...</option>
+              <option value="Presidential">Presidential</option>
+              <option value="Senatorial">Senatorial</option>
+              <option value="House of Reps">House of Representatives</option>
+              <option value="Governoship">Governoship</option>
+              <option value="Local Government Chairman">
+                Local Government Chairman
+              </option>
+            </select>
+          </div>
+
+          <div class="w-full flex flex-col gap-[1rem]">
+            <label for="search-by-party" class="color-dark font-bold"
+              >Search by Party</label
+            >
+            <div class="flex items-center">
+              <ion-icon
+                name="search"
+                class="search-icon w-[2.6rem] h-[2.6rem]"
+              ></ion-icon>
+              <input
+                type="search"
+                name="search-by-party"
+                id=""
+                class="input search-by-party"
+                placeholder="Search by political party..."
+              />
+            </div>
+          </div>
+        </section>
+
         <section class="candidates margin-bottom-10">
           <header>
             <h2 class="secondary-heading margin-bottom-2">Candidates</h2>
