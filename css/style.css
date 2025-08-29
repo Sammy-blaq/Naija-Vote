@@ -164,6 +164,38 @@ HERO SECTION */
   color: #3cb371;
 }
 
+/* Election Selection */
+.section-election-select {
+  margin: 0 3rem;
+  margin-bottom: 2rem;
+}
+
+.select-election,
+::picker(.select-election) {
+  appearance: base-select;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.select-election > option,
+::picker(.select-election) {
+  border: none;
+  background-color: #e8e8e8;
+  margin: 0.4rem 0;
+}
+
+option:checked {
+  background-color: #ffd700;
+}
+
+.search-icon {
+  margin-right: -3.5rem;
+}
+
+.search-by-party {
+  padding-left: 5rem;
+}
+
 /* CSS for Candidates Section */
 .candidates-box {
   gap: 3rem;
