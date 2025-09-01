@@ -30,248 +30,368 @@
     <title>Naija Votes &mdash; Your Voice, Your Vote</title>
   </head>
   <body class="color-text body-index">
-    <header class="main-header margin-bottom-5">
-      <a class="main-nav-link primary-color link-home" href="./index.html"
-        ><ion-icon name="laptop-outline" class="logo-icon"></ion-icon>Naija
-        Votes</a
-      >
-      <nav class="main-nav">
-        <div class="main-nav-links-box">
-          <ul class="main-nav-list">
-            <li>
-              <a
-                class="main-nav-link link-vote primary-color"
-                href="./index.html"
-                >Vote</a
-              >
-            </li>
-            <li>
-              <a class="main-nav-link color-text" href="./results.html"
-                >Results</a
-              >
-            </li>
-            <li>
-              <a class="main-nav-link color-text" href="./how-to-vote.html"
-                >How to Vote</a
-              >
-            </li>
-            <li>
-              <a class="main-nav-link color-text" href="./verify-vote.html"
-                >Verify Vote</a
-              >
-            </li>
-          </ul>
-          <ul class="main-nav-list">
-            <li>
-              <a class="main-nav-link color-text link-login" href="./login.html"
-                >Login</a
-              >
-            </li>
-            <li>
-              <a
-                class="main-nav-link color-text link-register"
-                href="./register.html"
-                >Register</a
-              >
-            </li>
-            <li>
-              <a class="main-nav-link color-text link-admin" href="./admin.html"
-                >Admin</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
-    </header>
-    <main class="">
-      <div class="container">
-        <section class="hero margin-bottom-5">
-          <span
-            ><ion-icon name="laptop-outline" class="hero-icon"></ion-icon
-          ></span>
-          <div class="hero-text">
-            <h1 class="hero-title">Cast Your Vote</h1>
-            <p>Select your preferred candidate and make your voice heard.</p>
-          </div>
-        </section>
-
-        <section
-          class="section-election-select flex justify-between gap-[3rem]"
+    <div class="wrapper">
+      <header class="main-header margin-bottom-5">
+        <a class="main-nav-link primary-color link-home" href="./index.html"
+          ><ion-icon name="laptop-outline" class="logo-icon"></ion-icon>Naija
+          Votes</a
         >
-          <div class="flex flex-col w-full gap-[1rem]">
-            <label for="election-type" class="color-dark font-bold"
-              >Select Election Type</label
-            >
-
-            <select name="election-type" id="" class="input select-election">
-              <option value="" selected>Select an election...</option>
-              <option value="Presidential">Presidential</option>
-              <option value="Senatorial">Senatorial</option>
-              <option value="House of Reps">House of Representatives</option>
-              <option value="Governoship">Governoship</option>
-              <option value="Local Government Chairman">
-                Local Government Chairman
-              </option>
-            </select>
+        <nav class="main-nav">
+          <div class="main-nav-links-box">
+            <ul class="main-nav-list">
+              <li>
+                <a
+                  class="main-nav-link link-vote primary-color"
+                  href="./index.html"
+                  >Vote</a
+                >
+              </li>
+              <li>
+                <a class="main-nav-link color-text" href="./results.html"
+                  >Results</a
+                >
+              </li>
+              <li>
+                <a class="main-nav-link color-text" href="./how-to-vote.html"
+                  >How to Vote</a
+                >
+              </li>
+              <li>
+                <a class="main-nav-link color-text" href="./verify-vote.html"
+                  >Verify Vote</a
+                >
+              </li>
+            </ul>
+            <ul class="main-nav-list">
+              <li>
+                <a
+                  class="main-nav-link color-text link-login"
+                  href="./login.html"
+                  >Login</a
+                >
+              </li>
+              <li>
+                <a
+                  class="main-nav-link color-text link-register"
+                  href="./register.html"
+                  >Register</a
+                >
+              </li>
+              <li>
+                <a
+                  class="main-nav-link color-text link-admin"
+                  href="./admin.html"
+                  >Admin</a
+                >
+              </li>
+            </ul>
           </div>
-
-          <div class="w-full flex flex-col gap-[1rem]">
-            <label for="search-by-party" class="color-dark font-bold"
-              >Search by Party</label
-            >
-            <div class="flex items-center">
-              <ion-icon
-                name="search"
-                class="search-icon w-[2.6rem] h-[2.6rem]"
-              ></ion-icon>
-              <input
-                type="search"
-                name="search-by-party"
-                id=""
-                class="input search-by-party"
-                placeholder="Search by political party..."
-              />
+        </nav>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </header>
+      <main class="main-content">
+        <div class="container">
+          <section class="hero margin-bottom-5">
+            <span
+              ><ion-icon name="laptop-outline" class="hero-icon"></ion-icon
+            ></span>
+            <div class="hero-text">
+              <h1 class="hero-title">Cast Your Vote</h1>
+              <p>Select your preferred candidate and make your voice heard.</p>
             </div>
-          </div>
-        </section>
-
-        <section class="candidates margin-bottom-10">
-          <header>
-            <h2 class="secondary-heading margin-bottom-2">Candidates</h2>
+          </section>
+          <section
+            class="section-election-select flex justify-between gap-[3rem]"
+          >
+            <div class="flex flex-col w-full gap-[1rem]">
+              <label for="election-type" class="color-dark font-bold"
+                >Select Election Type</label
+              >
+              <select name="election-type" id="" class="input select-election">
+                <option value="" selected>Select an election...</option>
+                <option value="President">Presidential</option>
+                <option value="Senatorial">Senatorial</option>
+                <option value="House of Reps">House of Representatives</option>
+                <option value="Governorship">Governoship</option>
+                <option value="Local Government">
+                  Local Government Chairman
+                </option>
+              </select>
+            </div>
+            <div class="w-full flex flex-col gap-[1rem]">
+              <label for="search-by-party" class="color-dark font-bold"
+                >Search by Party</label
+              >
+              <div class="flex items-center">
+                <ion-icon
+                  name="search"
+                  class="search-icon w-[2.6rem] h-[2.6rem]"
+                ></ion-icon>
+                <input
+                  type="search"
+                  name="search-by-party"
+                  id=""
+                  class="input search-by-party"
+                  placeholder="Search by political party..."
+                />
+              </div>
+            </div>
+          </section>
+          <section class="candidate-list margin-bottom-10 mx-[30px]">
+            <header>
+              <h2 class="secondary-heading margin-bottom-2 candidates-heading">
+                Candidates
+              </h2>
+            </header>
+            <div
+              class="no-candidates w-full h-[20rem] flex items-center justify-center"
+            >
+              <p class="color-dark margin-bottom-3 text-center text-[1.8rem]">
+                Please select an election type to view candidates.
+              </p>
+            </div>
+            <div
+              class="president-candidates candidates-box grid grid-cols-2 margin-bottom-3"
+            >
+              <div class="candidate candidate-1">
+                <div class="candidate-inner">
+                  <img
+                    src="./img/Blue eyes [Original] (5600x3600).png"
+                    class="candidate-img"
+                    alt="candidate-1"
+                  />
+                  <div class="candidate-info">
+                    <p class="candidate-name color-dark">Khaled Jibril</p>
+                    <p>Unity & Progress Party (UPP)</p>
+                  </div>
+                </div>
+                <img
+                  src="./img/963f0b7.jpg"
+                  alt="Party Logo"
+                  class="party-logo"
+                />
+              </div>
+              <div class="candidate candidate-2">
+                <div class="candidate-inner">
+                  <img
+                    src="./img/Blue eyes [Original] (5600x3600).png"
+                    class="candidate-img"
+                    alt="candidate-2"
+                  />
+                  <div class="candidate-info">
+                    <p class="candidate-name color-dark">Aisha Bello</p>
+                    <p>New Nigeria Alliance (NNA)</p>
+                  </div>
+                </div>
+                <img
+                  src="./img/963f0b7.jpg"
+                  alt="Party Logo"
+                  class="party-logo"
+                />
+              </div>
+            </div>
+            <div
+              class="governor-candidates candidates-box grid grid-cols-2 margin-bottom-3"
+            >
+              <div class="candidate candidate-3">
+                <div class="candidate-inner">
+                  <img
+                    src="./img/Blue eyes [Original] (5600x3600).png"
+                    class="candidate-img"
+                    alt="candidate-3"
+                  />
+                  <div class="candidate-info">
+                    <p class="candidate-name color-dark">Chinedu Okeke</p>
+                    <p>People Democratic Coalition (PDC)</p>
+                  </div>
+                </div>
+                <img
+                  src="./img/963f0b7.jpg"
+                  alt="Party Logo"
+                  class="party-logo"
+                />
+              </div>
+              <div class="candidate candidate-4">
+                <div class="candidate-inner">
+                  <img
+                    src="./img/Blue eyes [Original] (5600x3600).png"
+                    class="candidate-img"
+                    alt="candidate-4"
+                  />
+                  <div class="candidate-info">
+                    <p class="candidate-name color-dark">Fatima Abubakar</p>
+                    <p>Social Justice Movement (SJM)</p>
+                  </div>
+                </div>
+                <img
+                  src="./img/963f0b7.jpg"
+                  alt="Party Logo"
+                  class="party-logo"
+                />
+              </div>
+            </div>
+            <div
+              class="senator-candidates candidates-box grid grid-cols-2 margin-bottom-3"
+            >
+              <div class="candidate candidate-3">
+                <div class="candidate-inner">
+                  <img
+                    src="./img/Blue eyes [Original] (5600x3600).png"
+                    class="candidate-img"
+                    alt="candidate-3"
+                  />
+                  <div class="candidate-info">
+                    <p class="candidate-name color-dark">Chinedu Okeke</p>
+                    <p>People Democratic Coalition (PDC)</p>
+                  </div>
+                </div>
+                <img
+                  src="./img/963f0b7.jpg"
+                  alt="Party Logo"
+                  class="party-logo"
+                />
+              </div>
+              <div class="candidate candidate-4">
+                <div class="candidate-inner">
+                  <img
+                    src="./img/Blue eyes [Original] (5600x3600).png"
+                    class="candidate-img"
+                    alt="candidate-4"
+                  />
+                  <div class="candidate-info">
+                    <p class="candidate-name color-dark">Fatima Abubakar</p>
+                    <p>Social Justice Movement (SJM)</p>
+                  </div>
+                </div>
+                <img
+                  src="./img/963f0b7.jpg"
+                  alt="Party Logo"
+                  class="party-logo"
+                />
+              </div>
+            </div>
+            <div
+              class="reps-candidates candidates-box grid grid-cols-2 margin-bottom-3"
+            >
+              <div class="candidate candidate-4">
+                <div class="candidate-inner">
+                  <img
+                    src="./img/Blue eyes [Original] (5600x3600).png"
+                    class="candidate-img"
+                    alt="candidate-4"
+                  />
+                  <div class="candidate-info">
+                    <p class="candidate-name color-dark">Fatima Abubakar</p>
+                    <p>Social Justice Movement (SJM)</p>
+                  </div>
+                </div>
+                <img
+                  src="./img/963f0b7.jpg"
+                  alt="Party Logo"
+                  class="party-logo"
+                />
+              </div>
+            </div>
+            <div
+              class="governor-candidates candidates-box grid grid-cols-2 margin-bottom-3"
+            >
+              <div class="candidate candidate-3">
+                <div class="candidate-inner">
+                  <img
+                    src="./img/Blue eyes [Original] (5600x3600).png"
+                    class="candidate-img"
+                    alt="candidate-3"
+                  />
+                  <div class="candidate-info">
+                    <p class="candidate-name color-dark">Chinedu Okeke</p>
+                    <p>People Democratic Coalition (PDC)</p>
+                  </div>
+                </div>
+                <img
+                  src="./img/963f0b7.jpg"
+                  alt="Party Logo"
+                  class="party-logo"
+                />
+              </div>
+            </div>
+            <div
+              class="local-gov-candidates candidates-box grid grid-cols-2 margin-bottom-3"
+            >
+              <div class="candidate candidate-3">
+                <div class="candidate-inner">
+                  <img
+                    src="./img/Blue eyes [Original] (5600x3600).png"
+                    class="candidate-img"
+                    alt="candidate-3"
+                  />
+                  <div class="candidate-info">
+                    <p class="candidate-name color-dark">Chinedu Okeke</p>
+                    <p>People Democratic Coalition (PDC)</p>
+                  </div>
+                </div>
+                <img
+                  src="./img/963f0b7.jpg"
+                  alt="Party Logo"
+                  class="party-logo"
+                />
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary btn-cast-vote margin-bottom-5 btn-disabled"
+            >
+              Cast My Vote
+            </button>
+          </section>
+        </div>
+      </main>
+      <div class="verify-code-box">
+        <div class="verify-code-card">
+          <header class="verify-code-header margin-bottom-3">
+            <ion-icon
+              name="checkmark-circle-outline"
+              class="verify-code-icon"
+            ></ion-icon>
+            <h1 class="secondary-heading color-dark">Vote Confirmed!</h1>
+            <p class="verify-code-text">
+              Your vote has been securely and anonymously recorded. Use the ID
+              below to verify your vote.
+            </p>
           </header>
-
-          <div class="candidates-box grid grid-cols-2 margin-bottom-3">
-            <div class="candidate candidate-1">
-              <div class="candidate-inner">
-                <img
-                  src="./img/Blue eyes [Original] (5600x3600).png"
-                  class="candidate-img"
-                  alt="candidate-1"
-                />
-                <div class="candidate-info">
-                  <p class="candidate-name color-dark">Khaled Jibril</p>
-                  <p>Unity & Progress Party (UPP)</p>
-                </div>
-              </div>
-              <img
-                src="./img/963f0b7.jpg"
-                alt="Party Logo"
-                class="party-logo"
-              />
-            </div>
-            <div class="candidate candidate-2">
-              <div class="candidate-inner">
-                <img
-                  src="./img/Blue eyes [Original] (5600x3600).png"
-                  class="candidate-img"
-                  alt="candidate-2"
-                />
-                <div class="candidate-info">
-                  <p class="candidate-name color-dark">Aisha Bello</p>
-                  <p>New Nigeria Alliance (NNA)</p>
-                </div>
-              </div>
-              <img
-                src="./img/963f0b7.jpg"
-                alt="Party Logo"
-                class="party-logo"
-              />
-            </div>
-            <div class="candidate candidate-3">
-              <div class="candidate-inner">
-                <img
-                  src="./img/Blue eyes [Original] (5600x3600).png"
-                  class="candidate-img"
-                  alt="candidate-3"
-                />
-                <div class="candidate-info">
-                  <p class="candidate-name color-dark">Chinedu Okeke</p>
-                  <p>People Democratic Coalition (PDC)</p>
-                </div>
-              </div>
-              <img
-                src="./img/963f0b7.jpg"
-                alt="Party Logo"
-                class="party-logo"
-              />
-            </div>
-            <div class="candidate candidate-4">
-              <div class="candidate-inner">
-                <img
-                  src="./img/Blue eyes [Original] (5600x3600).png"
-                  class="candidate-img"
-                  alt="candidate-4"
-                />
-                <div class="candidate-info">
-                  <p class="candidate-name color-dark">Fatima Abubakar</p>
-                  <p>Social Justice Movement (SJM)</p>
-                </div>
-              </div>
-              <img
-                src="./img/963f0b7.jpg"
-                alt="Party Logo"
-                class="party-logo"
-              />
-            </div>
+          <div class="flex margin-bottom-3">
+            <input
+              type="text"
+              name="verification_code"
+              id="verification_code"
+              class="input verify_code_input"
+            />
+            <button type="button" class="btn btn-secondary btn-copy">
+              <ion-icon
+                name="copy-outline"
+                class="icon-copy color-dark"
+              ></ion-icon>
+            </button>
           </div>
           <button
             type="button"
-            class="btn btn-primary btn-cast-vote margin-bottom-5"
+            class="btn btn-primary btn-verify-close margin-bottom-2"
           >
-            Cast My Vote
-          </button>
-        </section>
-      </div>
-    </main>
-
-    <div class="verify-code-box">
-      <div class="verify-code-card">
-        <header class="verify-code-header margin-bottom-3">
-          <ion-icon
-            name="checkmark-circle-outline"
-            class="verify-code-icon"
-          ></ion-icon>
-          <h1 class="secondary-heading color-dark">Vote Confirmed!</h1>
-          <p class="verify-code-text">
-            Your vote has been securely and anonymously recorded. Use the ID
-            below to verify your vote.
-          </p>
-        </header>
-        <div class="flex margin-bottom-3">
-          <input
-            type="text"
-            name="verification_code"
-            id="verification_code"
-            class="input verify_code_input"
-          />
-          <button type="button" class="btn btn-secondary btn-copy">
-            <ion-icon
-              name="copy-outline"
-              class="icon-copy color-dark"
-            ></ion-icon>
+            Close
           </button>
         </div>
-        <button
-          type="button"
-          class="btn btn-primary btn-verify-close margin-bottom-2"
-        >
-          Close
-        </button>
       </div>
+      <footer class="main-footer">
+        <p>&copy; 2023 Naija Votes. All rights reserved.</p>
+        <p>
+          <a href="./reports.html" class="link report-link"
+            >Report an Issue / Feedback</a
+          >
+        </p>
+      </footer>
     </div>
-
-    <footer class="main-footer">
-      <p>&copy; 2023 Naija Votes. All rights reserved.</p>
-      <p>
-        <a href="./reports.html" class="link report-link"
-          >Report an Issue / Feedback</a
-        >
-      </p>
-    </footer>
     <script src="./js/script.js"></script>
     <script src="./js/index.js"></script>
   </body>
