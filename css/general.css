@@ -54,7 +54,7 @@ html {
 }
 
 .container {
-  max-width: 120rem; /* 1200px */
+  max-width: 100rem; /* 1200px */
   margin: 0 auto;
 }
 
@@ -240,4 +240,8 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.btn-disabled:hover {
+  cursor: not-allowed;
 }
