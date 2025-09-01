@@ -167,7 +167,7 @@ HERO SECTION */
 /* Election Selection */
 .section-election-select {
   margin: 0 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .select-election,
@@ -196,13 +196,25 @@ option:checked {
   padding-left: 5rem;
 }
 
+/* Hide these candidates by default */
+.president-candidates,
+.governor-candidates,
+.senator-candidates,
+.reps-candidates,
+.governor-candidates,
+.local-gov-candidates {
+  display: none;
+}
+
 /* CSS for Candidates Section */
 .candidates-box {
   gap: 3rem;
 }
 
-.candidates {
-  margin-bottom: 5rem;
+.candidate-list {
+  /* margin-bottom: 5rem; */
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .candidate {
@@ -274,8 +286,8 @@ option:checked {
 
 .verify-code-box {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
   top: 50%;
   left: 50%;
@@ -285,7 +297,6 @@ option:checked {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 1.5rem;
   backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.7);
 
